@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">AppCare</string>
+    <string name="sign_in_cancelled">Falha no cadastro</string>
+    <string name="no_internet_connection">Verifique sua conexão</string>
+    <string name="unknown_error">Erro desconhecido</string>
+    <string name="daily_button">Todo dia</string>
+    <string name="weekly_button">Toda semana</string>
+    <string name="monthly_button">Todo mês</string>
+    <string name="once_button">Uma vez</string>
+    <string name="reminder_name">Nome</string>
+    <string name="menuCreateReminder">Criar lembrete</string>
+    <string name="menuSettings">Configurações</string>
+    <string name="reminderListCaregiverField">Criado pelo(a) cuidador(a)</string>
+    <string name="onceReminderType">Uma vez</string>
+    <string name="dailyReminderType">Todo dia</string>
+    <string name="weeklyReminderType">Toda semana</string>
+    <string name="monthlyReminderType">Todo mês</string>
+    <string name="emergencyButton">EMERGÊNCIA</string>
+    <string name="emergencyMessage">Emergência enviada. Mantenha a calma</string>
+    <string name="emergencyMessageError">Não há cuidador associado a você</string>
+    <string name="action_sign_in_short">Registrar</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Senha muito curta, mínimo de 6 caracteres</string>
+    <string name="auth_failed">Falha na autenticação, cheque seu email e senha ou registre-se</string>
+    <string name="change_email">Alterar email</string>
+    <string name="change_password">Alterar senha</string>
+    <string name="send_password_reset_email">Enviar senha de alteração por email</string>
+    <string name="remove_user">Remover usuário</string>
+    <string name="new_pass">Nova senha</string>
+    <string name="title_activity_profile_patient">Olá, paciente</string>
+    <string name="title_activity_profile_caregiver">Olá, cuidador</string>
+    <string name="title_activity_login">Entrar</string>
+    <string name="hint_email"><font size="20">Email</font></string>
+    <string name="hint_password"><font size="20">Senha</font></string>
+    <string name="hint_phone">Telefone</string>
+    <string name="hint_name">Primeiro nome</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_link_to_register">Registrar-se</string>
+    <string name="btn_link_to_login">Já se cadastrou? Clique aqui para entrar</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Esqueceu sua senha?</string>
+    <string name="btn_reset_password">Recuperar senha</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">Novo Email</string>
+    <string name="btn_change">Alterar</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_remove">Remover</string>
+    <string name="btn_sign_out">Sair</string>
+    <string name="lbl_forgot_password">Esqueceu sua senha?</string>
+    <string name="forgot_password_msg">Só precisamos do seu email cadastrado para enviar as instruções para recuperar sua senha.</string>
+    <string name="patient_list">Pacientes</string>
+    <string name="find_patient_email">Email do paciente</string>
+    <string name="connect_to_patient_dialog">Conectar ao paciente</string>
+    <string name="connect_patient_button">Conectar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="remove">Remover</string>
+    <string name="remove_patient_message">Você deseja remover %1$s da sua lista de pacientes?</string>
+    <string name="remove_reminder_message">Você deseja remover esse lembrete?</string>
+    <string name="confirmation">Confirmar</string>
+    <string name="reminderSelectDate">Selecionar data:</string>
+    <string name="reminderSelectHour">Selecionar hora:</string>
+    <string name="reminderSelectNameAndRepeat">Criar novo lembrete</string>
+    <string name="menuRemoveReminder">Remover lembrete</string>
+    <string name="alarmDismiss">Cancelar</string>
+    <string name="reminder_list_caregiver">Lembretes</string>
+
+
+    <string name="signInEmailUsed">Você já utilizou jane.doe@example.com. Entre com o Google para continuar para o AppCare</string>
+
+    <!--Remove reminder dialog-->
+    <string name="remove_reminder_dialog">Remover lembrete</string>
+    <string name="remove_reminder_button">Remover</string>
+
+    <!-- CreateReminderNameActivity -->
+    <string name="patient_not_found">Paciente não encontrado</string>
+    <string name="empty_patient">Digite o email do paciente</string>
+    <string name="empty_reminder_name">Digite um nome para o lembrete</string>
+
+    <!-- PatientListActivity - Caregiver adding or removing patient -->
+    <string name="add_patient_not_found">Paciente não cadastrado</string>
+    <string name="add_patient_success">Novo paciente adicionado</string>
+    <string name="patient_removed">Paciente removido</string>
+
+    <!-- Patient-caregiver connection notifications -->
+    <string name="new_connection_title">Você tem um novo cuidador!</string>
+    <string name="new_connection_body">Cuidador %1$s cadastrou você como paciente</string>
+    <string name="removed_connection_title">Cuidador removido</string>
+    <string name="removed_connection_body">Você não possui mais um cuidador</string>
+
+    <!-- Reminder acknowledge -->
+    <string name="ack_title">Lembrete visto pelo seu paciente</string>
+    <string name="ack_body">Paciente %1$s viu o lembrete "%2$s"</string>
+
+    <!-- Emergency notification -->
+    <string name="emergency_title">!!! EMERGÊNCIA !!!</string>
+    <string name="emergency_body">Paciente %1$s apertou o botão de emergência!</string>
+    <string name="emergency_exit_geofence_title">Paciente saiu da cerca geográfica.</string>
+    <string name="emergency_exit_geofence_body">Paciente %1$s saiu da cerca geográfica que você configurou.</string>
+    <string name="emergency_enter_geofence_title">Paciente entrou na cerca geográfica.</string>
+    <string name="emergency_enter_geofence_body">Paciente %1$s voltou para a cerca geográfica que você configurou.</string>
+
+    <string name="patient_email">Email do paciente</string>
+    <string name="empty_patient_list_hint">Nenhum paciente adicionado</string>
+
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="title_activity_reminder_list">Lista de lembretes</string>
+    <string name="title_activity_create_reminder">Criar lembrete</string>
+
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+    <string name="number_picker_formatter">%02d</string>
+
+
+    <string-array name="months_array">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string name="title_activity_connect_to_patient">ConectarAoPaciente</string>
+    <string name="title_activity_patient_list">ListaPacienteActivity</string>
+
+    <!-- GeofenceListActivity -->
+    <string name="geofence_list_caregiver">Cercas Geográficas</string>
+    <string name="title_activity_geofence_list">Cercas Geográficas</string>
+    <string name="click_to_see_map">Clique para editar</string>
+
+    <!-- MapsActivity -->
+    <!-- Creating geofence -->
+    <string name="close_geofence_button">Fechar</string>
+    <string name="cancel_geofence_button">Cancelar</string>
+    <string name="create_geofence_button">Criar</string>
+    <!-- Editing geofence -->
+    <string name="save_geofence_button">Salvar</string>
+    <string name="remove_geofence_button">Remover</string>
+
+    <string name="radius_seekbar_text">Raio: %1$.0f m</string>
+
+    <string name="error_no_patient">Digite o email de um paciente</string>
+    <string name="add_geofence_success">Cerca geográfica criada</string>
+    <string name="add_geofence_error">Erro ao criar cerca geográfica. Tente de novo</string>
+    <string name="remove_geofence_success">Cerca geográfica removida</string>
+    <string name="remove_geofence_error">Erro ao remover cerca geográfica. Tente de novo</string>
+
+    <string name="get_location_error">Erro ao determinar posição. Verifique se seu GPS está ligado.</string>
+
+    <string name="last_position">Última posição</string>
+    <!-- End of MapsActivity -->
+
+    <!-- GeofenceHandler -->
+    <string name="add_geofence_success_title">Cerca geográfica criada</string>
+    <string name="add_geofence_success_body">Seu cuidador criou uma cerca geográfica para sua segurança.</string>
+
+    <string name="remove_geofence_success_title">Cerca geográfica removida</string>
+    <string name="remove_geofence_success_body">Seu cuidador removeu a cerca geográfica.</string>
+</resources>

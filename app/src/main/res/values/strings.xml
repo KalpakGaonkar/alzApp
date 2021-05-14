@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">AppCare</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile_patient">Hello, patient</string>
+    <string name="title_activity_profile_caregiver">Hello, caregiver</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email"><font size="20">Email</font></string>
+    <string name="hint_password"><font size="20">Password</font></string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_name">First name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_link_to_register">Sign up</string>
+    <string name="btn_link_to_login">Already registered? Click here to login</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="patient_list">Patients</string>
+    <string name="find_patient_email">Patient email</string>
+    <string name="connect_to_patient_dialog">Connect to patient</string>
+    <string name="connect_patient_button">Connect</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove">Remove</string>
+    <string name="remove_patient_message">Do you want to remove %1$s from your patient list?</string>
+    <string name="remove_reminder_message">Do you want to remove this reminder?</string>
+
+    <!--CreateReminderActivity -> Patient-->
+    <string name="reminderSelectNameAndRepeat">Create new reminder</string>
+    <string name="daily_button">Every day</string>
+    <string name="weekly_button">Every week</string>
+    <string name="monthly_button">Every month</string>
+    <string name="once_button">Once</string>
+    <string name="reminder_name">Reminder\'s name</string>
+    <string name="confirmation">Confirm</string>
+    <string name="reminderSelectDate">Select date:</string>
+    <string name="reminderSelectHour">Select hour:</string>
+
+    <!--Remove reminder dialog-->
+    <string name="remove_reminder_dialog">Remove reminder</string>
+    <string name="remove_reminder_button">Remove</string>
+
+
+    <!--MenuActivity-->
+    <string name="menuCreateReminder">Create reminder</string>
+    <string name="menuRemoveReminder">Remove reminder</string>
+    <string name="menuSettings">Settings</string>
+
+    <!--Notification reminder-->
+    <string name="alarmDismiss">Dismiss</string>
+
+    <!--List reminder-->
+    <string name="reminder_list_caregiver">Reminders</string>
+    <string name="reminderListCaregiverField">Created by caregiver</string>
+
+    <!--ReminderType-->
+    <string name="onceReminderType">Only once</string>
+    <string name="dailyReminderType">Every day</string>
+    <string name="weeklyReminderType">Every week</string>
+    <string name="monthlyReminderType">Every month</string>
+
+    <!--EmergencyReceiver-->
+    <string name="emergencyButton">EMERGENCY</string>
+    <string name="emergencyMessage">Emergency was sent. Keep calm.</string>
+    <string name="emergencyMessageError">There is no caregiver linked to you</string>
+
+    <!-- CreateReminderNameActivity -->
+    <string name="patient_not_found">Patient not found</string>
+    <string name="empty_patient">Type the patient email</string>
+    <string name="empty_reminder_name">Type a name for the reminder</string>
+
+    <!-- PatientListActivity - Caregiver adding or removing patient -->
+    <string name="add_patient_not_found">Patient not signed up</string>
+    <string name="add_patient_success">New patient added</string>
+    <string name="patient_removed">Patient removed</string>
+
+    <!-- Patient-caregiver connection notifications -->
+    <string name="new_connection_title">You have a new caregiver!</string>
+    <string name="new_connection_body">Caregiver %1$s added you as a patient</string>
+    <string name="removed_connection_title">Caregiver removed</string>
+    <string name="removed_connection_body">You don\'t have a caregiver anymore</string>
+
+    <!-- Reminder acknowledge notification -->
+    <string name="ack_title">Reminder viewed by your patient</string>
+    <string name="ack_body">Patient %1$s viewed the reminder "%2$s"</string>
+
+    <!-- Emergency notification -->
+    <string name="emergency_title">!!! EMERGENCY !!!</string>
+    <string name="emergency_body">Patient %1$s pressed the emergency button!</string>
+    <string name="emergency_exit_geofence_title">Patient exited the geofence.</string>
+    <string name="emergency_exit_geofence_body">Patient %1$s left the geofence that you set.</string>
+    <string name="emergency_enter_geofence_title">Patient entered the geofence.</string>
+    <string name="emergency_enter_geofence_body">Patient %1$s is back inside the geofence that you set.</string>
+
+
+    <string name="patient_email">Patient\'s email</string>
+    <string name="empty_patient_list_hint">No patients added yet</string>
+
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="title_activity_reminder_list">Reminders List</string>
+    <string name="title_activity_create_reminder">Create Reminder</string>
+
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+    <string name="number_picker_formatter">%02d</string>
+
+    <string name="patient">Patient</string>
+    <string name="caregiver">Caregiver</string>
+
+    <string name="signInEmailUsed">You\'ve already used jane.doe@example.com. Sign in with Google to continue to AppCare</string>
+
+    <string-array name="user_type_array">
+        <item>@string/patient</item>
+        <item>@string/caregiver</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string name="title_activity_connect_to_patient">ConnectToPatient</string>
+    <string name="title_activity_patient_list">PatientListActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- GeofenceListActivity -->
+    <string name="geofence_list_caregiver">Geofences</string>
+    <string name="title_activity_geofence_list">Geofences</string>
+    <string name="click_to_see_map">Click to edit it</string>
+
+    <!-- MapsActivity -->
+    <!-- Creating geofence -->
+    <string name="close_geofence_button">Close</string>
+    <string name="cancel_geofence_button">Cancel</string>
+    <string name="create_geofence_button">Create</string>
+    <!-- Editing geofence -->
+    <string name="save_geofence_button">Save</string>
+    <string name="remove_geofence_button">Remove</string>
+    
+    <string name="radius_seekbar_text">Radius: %1$.0f m</string>
+    
+    <string name="error_no_patient">Enter a patient email</string>
+    <string name="add_geofence_success">Geofence created</string>
+    <string name="add_geofence_error">Error creating geofence. Try again</string>
+    <string name="remove_geofence_success">Geofence removed</string>
+    <string name="remove_geofence_error">Error removing geofence. Try again</string>
+
+    <string name="get_location_error">Error getting location. Check if your GPS is on</string>
+
+    <string name="last_position">Last position</string>
+    <!-- End of MapsActivity -->
+
+    <!-- GeofenceHandler -->
+    <string name="add_geofence_success_title">Geofence created</string>
+    <string name="add_geofence_success_body">Your caregiver created a geofence for your own safety.</string>
+
+    <string name="remove_geofence_success_title">Geofence removed</string>
+    <string name="remove_geofence_success_body">Your caregiver removed the geofence.</string>
+
+
+</resources>
