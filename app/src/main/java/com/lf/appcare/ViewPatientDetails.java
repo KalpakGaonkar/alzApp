@@ -76,7 +76,7 @@ public class ViewPatientDetails extends AppCompatActivity {
 //        reff.child(userUid).child(userUid).child()
 //        Intent intent = getIntent();
         Intent intent = getIntent();
-        patientDocUid = intent.getStringExtra("thisIsPatientId");
+        patientDocUid = intent.getStringExtra("thisIsThePatientId");
         System.out.println("Patient id");
         System.out.println(patientDocUid);
 

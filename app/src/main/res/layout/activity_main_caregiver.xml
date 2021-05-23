@@ -39,6 +39,20 @@
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp">
 
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="387dp"
+            android:layout_height="64dp"
+            android:textSize="22dp"
+            android:text="TextView" />
+
         <Button
             android:id="@+id/connectToPatientButton"
             style="?android:textAppearanceSmall"

@@ -63,6 +63,7 @@ public class CompleteSignupActivity extends AppCompatActivity {
                             currentUser.getEmail(),
                             firstName, userType);
                     db.getReference().child("users").child(currentUser.getUid()).setValue(user);
+
                     MyFirebaseInstanceIDService.sendRegistrationToServer(token);
                     intent = new Intent(CompleteSignupActivity.this, MainActivityPatient.class);
                     SharedPreferences myPreferences
@@ -81,6 +82,7 @@ public class CompleteSignupActivity extends AppCompatActivity {
                             currentUser.getEmail(),
                             firstName, userType);
                     db.getReference().child("users").child(currentUser.getUid()).setValue(user);
+                    db.getReference().child("users").child(currentUser.getUid()).child("patientCount").setValue("no");
                     MyFirebaseInstanceIDService.sendRegistrationToServer(token);
                     intent = new Intent(CompleteSignupActivity.this, MainActivityCaregiver.class);
                     SharedPreferences myPreferences

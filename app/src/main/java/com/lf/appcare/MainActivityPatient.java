@@ -95,9 +95,9 @@ public class MainActivityPatient extends AppCompatActivity {
         System.out.println("user id");
         System.out.println(user.getUid());
         TextView textView2 = (TextView) findViewById(R.id.textView2);
-        textView2.setText("Patient ID:");
+        textView2.setText("");
         TextView textView3 = (TextView) findViewById(R.id.textView3);
-        textView3.setText(user.getUid());
+        textView3.setText("");
 
 
 

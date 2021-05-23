@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -25,6 +26,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.util.List;
+
 public class MainActivityCaregiver extends AppCompatActivity {
 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
@@ -33,9 +36,11 @@ public class MainActivityCaregiver extends AppCompatActivity {
 
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
+    private List<PatientUser> patientList1;
     private Button randomButton;
     private String flag;
-    private int count = 0;
+    private String count;
+    private int patient = 0;
     private String patientUid, patientDocUid;
     private DatabaseReference db;
 
@@ -66,38 +71,55 @@ public class MainActivityCaregiver extends AppCompatActivity {
 
         //get current user
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String userUid1 = user.getUid();
-//        DatabaseReference reff = db.child("users").child(userUid1).child("patientList").child("0").child("uid");
-//        reff.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                patientUid = dataSnapshot.getValue().toString();
-//                System.out.println("this is patient uid");
-//                System.out.println(patientUid);
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
+        final String userUid1 = user.getUid();
+        System.out.println("curruserid");
+        System.out.println(userUid1);
 
-//        DatabaseReference refff = db.child("patientDocConnection").child(patientUid).child("patientDocId");
-//        refff.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                patientDocUid = dataSnapshot.getValue().toString();
-//                Intent intent1 = new Intent(MainActivityCaregiver.this, ViewPatientDetails.class);
-//                intent1.putExtra("thisIsPatientId", patientUid);
-//                startActivity(intent1);
-//            }
+
+        TextView textView10 = (TextView) findViewById(R.id.textView10);
+        textView10.setText("Caregiver ID:");
+        TextView textView11 = (TextView) findViewById(R.id.textView11);
+        textView11.setText(userUid1);
+
+
+        DatabaseReference reff = db.child("users").child(userUid1).child("patientCount");
+        reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                db.child("users").child(auth.getCurrentUser().getUid()).child("patientCount").setValue("no");
+                count = dataSnapshot.getValue().toString();
+                if(count=="no"){return;}
+                else{
+                    DatabaseReference refff = db.child("patientDocConnection").child(userUid1).child("patientDocId");
+                    refff.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            patientDocUid = dataSnapshot.getValue().toString();
+                            System.out.println("this is patientdocuid");
+                            System.out.println(patientDocUid);
+//                            Intent intent1 = new Intent(MainActivityCaregiver.this, ViewPatientDetails.class);
+//                            intent1.putExtra("thisIsPatientId", patientDocUid);
+//                            startActivity(intent1);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+                System.out.println("this is patient uid");
+                System.out.println(patientUid);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 //
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
+
 
         authListener = new FirebaseAuth.AuthStateListener()
         {
@@ -126,6 +148,9 @@ public class MainActivityCaregiver extends AppCompatActivity {
                                 return;
 
                             String userType = user.getUserType();
+                            patientList1 = user.getPatientList();
+                            System.out.println("This is patient list");
+                            System.out.println(patientList1);
 
                             System.out.println("User type: " + userType +
                                     "\nUser name: " + user.getFirstName() +
@@ -215,9 +240,15 @@ public class MainActivityCaregiver extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-
-                startActivity(new Intent(MainActivityCaregiver.this, PatientDetailsListActivity.class));
-                finish();
+                if(count=="no"){
+                    Toast.makeText(MainActivityCaregiver.this, "You have not added a patient", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else{
+                    Intent intent1 = new Intent(MainActivityCaregiver.this, ViewPatientDetails.class);
+                    intent1.putExtra("thisIsThePatientId", patientDocUid);
+                    startActivity(intent1);
+                finish();}
             }
         });
 
@@ -258,6 +289,9 @@ public class MainActivityCaregiver extends AppCompatActivity {
     {
         //super.onBackPressed();
     }
+
+
+//    private
 
     private void getLocationPermission ()
     {

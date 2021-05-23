@@ -47,6 +47,7 @@ public class PatientListActivity extends AppCompatActivity {
     private FirebaseUser user;
     private AutoCompleteTextView textView;
     private ArrayAdapter<PatientUser> arrayAdapterUser;
+    private int count;
     private String caregiverUid;
 
     @Override
@@ -76,6 +77,10 @@ public class PatientListActivity extends AppCompatActivity {
 
 
         String userUid = user.getUid();
+
+
+
+
         DatabaseReference ref = db.child("users").child(userUid);
         ref.addValueEventListener(new ValueEventListener()
         {
@@ -110,6 +115,7 @@ public class PatientListActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int id)
                             {
                                 int response = caregiver.RemovePatient(patient);
+                                count = 0;
                                 Toast.makeText(getApplicationContext(), R.string.patient_removed,
                                         Toast.LENGTH_SHORT)
                                         .show();
@@ -169,6 +175,7 @@ public class PatientListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
+
                 final Dialog dialog = new Dialog(view.getContext());
                 dialog.setContentView(R.layout.dialog_add_patient);
                 dialog.setTitle(R.string.connect_to_patient_dialog);
@@ -199,6 +206,9 @@ public class PatientListActivity extends AppCompatActivity {
                                 {
                                     PatientUser patient = userSnapshot.getValue(PatientUser.class);
                                     response = caregiver.AddPatient(patient);
+                                    System.out.println("See patient id");
+                                    System.out.println(patient.getUid());
+
 
                                     Toast.makeText(getApplicationContext(), R.string.add_patient_success,
                                             Toast.LENGTH_SHORT)
@@ -268,8 +278,12 @@ public class PatientListActivity extends AppCompatActivity {
                     TextView text1 = view.findViewById(android.R.id.text1);
                     TextView text2 = view.findViewById(android.R.id.text2);
 
+//                    Intent intent1 = new Intent(PatientListActivity.this, PatientDetailsListActivity.class);
+//                    intent1.putExtra("addedPatientId", patient.getUid());
+
                     text1.setText(patientList.get(position).getFirstName());
                     text2.setText(patientList.get(position).getEmail());
+                    System.out.println("This gets user id");
                     return view;
                 }
             };

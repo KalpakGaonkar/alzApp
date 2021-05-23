@@ -49,5 +49,8 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
         DatabaseReference db = FirebaseDatabase.getInstance().getReference();
         db.child("users").child(auth.getCurrentUser().getUid()).child("notificationTokens").child(token).setValue(token);
+
+
+
     }
 }

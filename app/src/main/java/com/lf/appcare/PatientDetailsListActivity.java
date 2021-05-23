@@ -60,7 +60,7 @@ public class PatientDetailsListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_list);
+        setContentView(R.layout.patient_details_list);
         Toolbar toolbar =  findViewById(R.id.toolbar);
         toolbar.setTitle(getString(R.string.patient_list));
 //        toolbar.setTitleTextColor(android.graphics.Color.WHITE);
@@ -120,7 +120,7 @@ public class PatientDetailsListActivity extends AppCompatActivity {
                 if (user == null)
                     return;
                 patientList = caregiver.getPatientList();
-                System.out.println("List");
+                System.out.println("List of pa");
 
                 System.out.println(patientList);
                 GetPatientNames(patientUids);
@@ -410,4 +410,3 @@ public class PatientDetailsListActivity extends AppCompatActivity {
         finish();
     }
 }
-
