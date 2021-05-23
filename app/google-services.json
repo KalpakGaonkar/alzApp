@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "520968695936",
+    "firebase_url": "https://simplify-alzheimers-dev-default-rtdb.firebaseio.com",
+    "project_id": "simplify-alzheimers-dev",
+    "storage_bucket": "simplify-alzheimers-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520968695936:android:f17755edefb078162fb665",
+        "android_client_info": {
+          "package_name": "com.lf.appcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520968695936-f47tbol65tdhaqfmbv72ij28057nbm60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbGXK4jNUsNBizVarBhHA-6hVZXziZhw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520968695936-f47tbol65tdhaqfmbv72ij28057nbm60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520968695936:android:858e7a201a4e6ee12fb665",
+        "android_client_info": {
+          "package_name": "com.sfit.alzheimerscare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520968695936-f47tbol65tdhaqfmbv72ij28057nbm60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbGXK4jNUsNBizVarBhHA-6hVZXziZhw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520968695936-f47tbol65tdhaqfmbv72ij28057nbm60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
