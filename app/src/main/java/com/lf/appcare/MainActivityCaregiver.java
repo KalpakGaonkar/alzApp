@@ -174,7 +174,7 @@ public class MainActivityCaregiver extends AppCompatActivity {
         patientDetailsList = findViewById(R.id.patientDetailsListButton);
         signOut =  findViewById(R.id.sign_out);
 //        randomButton = findViewById(R.id.random_button);
-        
+
         DatabaseReference ref = db.child("z");
         ref.addValueEventListener(new ValueEventListener()
         {
@@ -248,7 +248,7 @@ public class MainActivityCaregiver extends AppCompatActivity {
                     Intent intent1 = new Intent(MainActivityCaregiver.this, ViewPatientDetails.class);
                     intent1.putExtra("thisIsThePatientId", patientDocUid);
                     startActivity(intent1);
-                finish();}
+                    finish();}
             }
         });
 
