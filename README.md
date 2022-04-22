@@ -1,5 +1,6 @@
+
 # AlzCare
-App that aims to help people with Alzheimer's disease and their caregivers.
+<h5>App that aims to help people with Alzheimer's disease and their caregivers.</h5>
 
 ## Product Requirements
 
@@ -7,13 +8,16 @@ Goal: Allow user to successfully log in and view their details
 
 ## Functional Requirements and User Stories
 
-|  | User Story | Requirement |Priority|
-|---|---|---|---|
-|Create a new account|As a new user I want to be able to create an account|The system must allow user to create a new account using details like their name, email address and a password|Must Have|
-|Login on Device|As an existing user I want to be able to login to my account|The system must allow users to login using their email and password|Must Have|
-|Login as a patient or caregiver|As a user I want to be able to login as aa patient or a caregiver|The system must allow the user to login either as a patient or a caregiver|Must Have|
-|Connect caregiver and patient|As a caretaker I want to enter my patient's name and be able to connect to their device|The system must be able to connect caregiver to the patient through unique keys in the database|Must Have|
-|Display Patient Details|As an existing user I want to be able to see patient details on my phone|The system must fetch data from the database and display it on the device|Must Have|
+|  | User Story | Requirement |Priority|Status|
+|---|---|---|---|---|
+|Create a new account|As a new user I want to be able to create an account|The system must allow user to create a new account using details like their name, email address and a password|Must Have|Completed|
+|Login on Device|As an existing user I want to be able to login to my account|The system must allow users to login using their email and password|Must Have|Completed|
+|Login as a patient or caregiver|As a user I want to be able to login as aa patient or a caregiver|The system must allow the user to login either as a patient or a caregiver|Must Have|Completed|
+|Connect caregiver and patient|As a caretaker I want to enter my patient's name and be able to connect to their device|The system must be able to connect caregiver to the patient through unique keys in the database|Must Have|Completed|
+|Display Patient Details|As an existing user I want to be able to see patient details on my phone|The system must fetch data from the database and display it on the device|Must Have|Completed|
+|Display patient location|As a caregiver I want to see my patient's location|The system must be able to fetch location data from patient's device and display it on the caregiver's device|Must Have|Not Completed|
+|Set Geofence|As a caregiver I want to set a geofence around my patient's location|The system must be able to fetch location data and set geofence around that location|Must Have|Not Completed|
+|Send Geofence alert|As a caregiver I want to recieve an alert when my patient crosses the geofence boundary|The system must send out a notification alert when the patient's device crosses the geofence boundary set by the caregiver|Must Have|Not Completed|
 
 ## Screenshots of the application
 
